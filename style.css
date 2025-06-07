@@ -1,0 +1,111 @@
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  /* Brand Colors */
+  --brand-orange: #FF5F1F;
+  --brand-black: #000000;
+  --brand-white: #FFFFFF;
+
+  /* Font */
+  --font-family: 'Inter', sans-serif;
+
+  /* Spacing & Sizing */
+  --max-content-width: 1200px;
+  --base-padding: 1rem;
+}
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--brand-white);
+  color: var(--brand-black);
+  line-height: 1.6;
+  padding: var(--base-padding);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--brand-black);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* Paragraphs */
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+/* Links */
+a {
+  color: var(--brand-orange);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button, .button {
+  background-color: var(--brand-orange);
+  color: var(--brand-white);
+  border: none;
+  padding: 0.75em 1.5em;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+  background-color: #e64e14; /* Slightly darker orange */
+}
+
+/* Layout Containers */
+.container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--base-padding);
+}
+
+/* Utilities */
+.text-orange {
+  color: var(--brand-orange);
+}
+
+.text-white {
+  color: var(--brand-white);
+}
+
+.bg-orange {
+  background-color: var(--brand-orange);
+  color: var(--brand-white);
+}
+
+.text-center {
+  text-align: center;
+}
+
