@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <h1 class="page-heading">Tutorials</h1>
+  <ul class="post-list">
+    <li>
+      <span class="post-meta">Jun 23, 2025</span>
+      <h2>
+        <a class="post-link" href="https://github.com/bitcrushtesting/board_farm_tutorial_1/wiki">Board Farm Tutorial 1</a>
+      </h2>
+      <span class="post-meta">Jun 23, 2025</span>
+      <h2>
+        <a class="post-link" href="https://github.com/bitcrushtesting/board_farm_tutorial_2/wiki">Board Farm Tutorial 2</a>
+      </h2>
+      <span class="post-meta">Jun 23, 2025</span>
+      <h2>
+        <a class="post-link" href="https://github.com/bitcrushtesting/board_farm_tutorial_3/wiki">Board Farm Tutorial 3</a>
+      </h2>
+    </li>
+  </ul>
+
+
+</div>
